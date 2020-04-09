@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		52D53C63243EF91900179925 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 52D53C62243EF91900179925 /* AppDelegate.m */; };
+		52D53C66243EF91900179925 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52D53C65243EF91900179925 /* ViewController.m */; };
+		52D53C68243EF91B00179925 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52D53C67243EF91B00179925 /* Assets.xcassets */; };
+		52D53C6B243EF91B00179925 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52D53C69243EF91B00179925 /* Main.storyboard */; };
+		52D53C6E243EF91B00179925 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 52D53C6D243EF91B00179925 /* main.m */; };
+		52D53C73243EF92700179925 /* PLTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 8552083B243E25FF002ACE11 /* PLTask.m */; };
 		85520834243E25F0002ACE11 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 85520833243E25F0002ACE11 /* main.m */; };
 		8552083C243E25FF002ACE11 /* PLTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 8552083B243E25FF002ACE11 /* PLTask.m */; };
 /* End PBXBuildFile section */
@@ -24,6 +30,16 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		52D53C5F243EF91900179925 /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		52D53C61243EF91900179925 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		52D53C62243EF91900179925 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		52D53C64243EF91900179925 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		52D53C65243EF91900179925 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		52D53C67243EF91B00179925 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		52D53C6A243EF91B00179925 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		52D53C6C243EF91B00179925 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52D53C6D243EF91B00179925 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		52D53C6F243EF91B00179925 /* Demo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Demo.entitlements; sourceTree = "<group>"; };
 		85520830243E25F0002ACE11 /* PLTask */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = PLTask; sourceTree = BUILT_PRODUCTS_DIR; };
 		85520833243E25F0002ACE11 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8552083A243E25FF002ACE11 /* PLTask.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PLTask.h; sourceTree = "<group>"; };
@@ -31,6 +47,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		52D53C5C243EF91900179925 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8552082D243E25F0002ACE11 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -41,10 +64,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		52D53C60243EF91900179925 /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				52D53C61243EF91900179925 /* AppDelegate.h */,
+				52D53C62243EF91900179925 /* AppDelegate.m */,
+				52D53C64243EF91900179925 /* ViewController.h */,
+				52D53C65243EF91900179925 /* ViewController.m */,
+				52D53C67243EF91B00179925 /* Assets.xcassets */,
+				52D53C69243EF91B00179925 /* Main.storyboard */,
+				52D53C6C243EF91B00179925 /* Info.plist */,
+				52D53C6D243EF91B00179925 /* main.m */,
+				52D53C6F243EF91B00179925 /* Demo.entitlements */,
+			);
+			path = Demo;
+			sourceTree = "<group>";
+		};
 		85520827243E25F0002ACE11 = {
 			isa = PBXGroup;
 			children = (
 				85520832243E25F0002ACE11 /* PLTask */,
+				52D53C60243EF91900179925 /* Demo */,
 				85520831243E25F0002ACE11 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -53,6 +93,7 @@
 			isa = PBXGroup;
 			children = (
 				85520830243E25F0002ACE11 /* PLTask */,
+				52D53C5F243EF91900179925 /* Demo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -70,6 +111,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		52D53C5E243EF91900179925 /* Demo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 52D53C72243EF91B00179925 /* Build configuration list for PBXNativeTarget "Demo" */;
+			buildPhases = (
+				52D53C5B243EF91900179925 /* Sources */,
+				52D53C5C243EF91900179925 /* Frameworks */,
+				52D53C5D243EF91900179925 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Demo;
+			productName = Demo;
+			productReference = 52D53C5F243EF91900179925 /* Demo.app */;
+			productType = "com.apple.product-type.application";
+		};
 		8552082F243E25F0002ACE11 /* PLTask */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 85520837243E25F0002ACE11 /* Build configuration list for PBXNativeTarget "PLTask" */;
@@ -96,6 +154,9 @@
 				LastUpgradeCheck = 1130;
 				ORGANIZATIONNAME = pillar;
 				TargetAttributes = {
+					52D53C5E243EF91900179925 = {
+						CreatedOnToolsVersion = 11.4;
+					};
 					8552082F243E25F0002ACE11 = {
 						CreatedOnToolsVersion = 11.3.1;
 					};
@@ -115,11 +176,35 @@
 			projectRoot = "";
 			targets = (
 				8552082F243E25F0002ACE11 /* PLTask */,
+				52D53C5E243EF91900179925 /* Demo */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		52D53C5D243EF91900179925 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52D53C68243EF91B00179925 /* Assets.xcassets in Resources */,
+				52D53C6B243EF91B00179925 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		52D53C5B243EF91900179925 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52D53C66243EF91900179925 /* ViewController.m in Sources */,
+				52D53C6E243EF91B00179925 /* main.m in Sources */,
+				52D53C73243EF92700179925 /* PLTask.m in Sources */,
+				52D53C63243EF91900179925 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8552082C243E25F0002ACE11 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -131,7 +216,52 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXVariantGroup section */
+		52D53C69243EF91B00179925 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				52D53C6A243EF91B00179925 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
+		52D53C70243EF91B00179925 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Demo/Demo.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Demo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Demo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		52D53C71243EF91B00179925 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Demo/Demo.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Demo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Demo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		85520835243E25F0002ACE11 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -245,7 +375,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = DUK7Y8NUU7;
+				DEVELOPMENT_TEAM = PXL86E7953;
 				ENABLE_HARDENED_RUNTIME = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -255,7 +385,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = DUK7Y8NUU7;
+				DEVELOPMENT_TEAM = PXL86E7953;
 				ENABLE_HARDENED_RUNTIME = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -264,6 +394,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		52D53C72243EF91B00179925 /* Build configuration list for PBXNativeTarget "Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52D53C70243EF91B00179925 /* Debug */,
+				52D53C71243EF91B00179925 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		8552082B243E25F0002ACE11 /* Build configuration list for PBXProject "PLTask" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

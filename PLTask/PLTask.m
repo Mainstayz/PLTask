@@ -136,5 +136,9 @@
     [_task launch];
 }
 
+- (void)launchAndWaitUntilExit {
+    [self launch];
+    [_task waitUntilExit];
+}
 
 @end

@@ -30,20 +30,19 @@ int main(int argc, const char * argv[]) {
         PLTask *task = [PLTask new];
         task.command = @"ping www.baidu.com";
         task.outputHandler = ^(NSString * _Nonnull txt) {
-            NSLog(@"1  %s %@",__func__,txt);
+            NSLog(@"1 %@",txt);
         };
         task.errortHandler = ^(NSString * _Nonnull txt) {
-            NSLog(@"2  %s %@",__func__,txt);
+            NSLog(@"2 %@",txt);
         };
         task.completionHandler = ^(PLTask * this) {
-            NSLog(@"3  %s %@",__func__,this);
+            NSLog(@"3 %@",this);
         };
         [task launch];
         
         sleep(3);
-        [task interrupt];
         
-        sleep(50);
+        [task interrupt];
     }
     return 0;
 }

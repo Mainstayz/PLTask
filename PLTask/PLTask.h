@@ -19,6 +19,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic ,copy) NSString *command;
 - (instancetype)init;
 - (void)launch;
+- (void)launchAndWaitUntilExit;
 - (void)write:(NSString *)input;
 - (void)writeAndCloseInput:(NSString *)input;
 - (BOOL)waitUntilExit:(NSString **)output error:(NSString **)error;
