@@ -22,7 +22,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)launchAndWaitUntilExit;
 - (void)write:(NSString *)input;
 - (void)writeAndCloseInput:(NSString *)input;
-- (BOOL)waitUntilExit:(NSString **)output error:(NSString **)error;
+- (int)waitUntilExit:(NSString **)output error:(NSString **)error;
 @end
 
 @interface PLTask (ForwardedToNSTask)

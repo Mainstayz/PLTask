@@ -87,7 +87,7 @@
     [[_task.standardInput fileHandleForWriting] closeFile];
 }
 
-- (BOOL)waitUntilExit:(NSString **)output error:(NSString **)error
+- (int)waitUntilExit:(NSString **)output error:(NSString **)error
 {
     [PLTask stopFileHandle:_task.standardOutput];
     NSPipe *outputPipe = [NSPipe pipe];
@@ -106,7 +106,7 @@
             if (error) {
                 *error = exception.reason;
             }
-            return NO;
+            return [_task terminationStatus];
         }
     }
     [_task waitUntilExit];
@@ -116,7 +116,7 @@
     if (output) {
         *output = stringRead;
     }
-    return YES;
+    return [_task terminationStatus];
 }
 - (void)launch
 {
